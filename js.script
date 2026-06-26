@@ -1,0 +1,56 @@
+const cats = {
+
+    persian: {
+        name: "Persian Cat",
+        description:
+        "Persian cats are known for their luxurious long coats and sweet temperament.",
+        nature:
+        "Calm, gentle, affectionate, and quiet.",
+        suitable:
+        "Best for families, seniors, or people who enjoy a peaceful home environment."
+    },
+
+    mainecoon: {
+        name: "Maine Coon",
+        description:
+        "One of the largest domesticated cat breeds, famous for its friendly personality.",
+        nature:
+        "Sociable, intelligent, playful, and adaptable.",
+        suitable:
+        "Great for active families and homes with children or other pets."
+    },
+
+    siamese: {
+        name: "Siamese Cat",
+        description:
+        "Siamese cats are elegant, vocal, and highly attached to their owners.",
+        nature:
+        "Energetic, curious, affectionate, and talkative.",
+        suitable:
+        "Ideal for people who want an interactive and attention-loving pet."
+    },
+
+    ragdoll: {
+        name: "Ragdoll Cat",
+        description:
+        "Ragdolls are famous for their soft coats and relaxed behavior.",
+        nature:
+        "Friendly, gentle, patient, and cuddly.",
+        suitable:
+        "Perfect for families, first-time cat owners, and people seeking a loving companion."
+    }
+};
+
+function showInfo(breed){
+
+    const cat = cats[breed];
+
+    document.getElementById("info-box").innerHTML = `
+        <h2>${cat.name}</h2>
+        <p><strong>Description:</strong> ${cat.description}</p>
+        <br>
+        <p><strong>Nature:</strong> ${cat.nature}</p>
+        <br>
+        <p><strong>Most Suitable For:</strong> ${cat.suitable}</p>
+    `;
+}
